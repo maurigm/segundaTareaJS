@@ -146,3 +146,335 @@
 // Según el resultado, de 0 a 22, le corresponderá una letra de las siguientes:  (T, R, W, A, G, M, Y, F, P, D, X, B, N, J, Z, S, Q, V, H, L, C, K, E) 
 // Si lo introducido no es un número deberá indicarse con un alert y volver a preguntar.
 // Deberá de repetirse el proceso hasta que el usuario pulse «cancelar».
+
+
+// let comprobar = 0;
+// let DNI = "";
+// let numero;
+// let modulo
+
+
+
+// while (DNI != null) {
+//     DNI = prompt(`cual es su numero de DNI?`);
+//     if (DNI != null) {
+//         numero = parseInt(DNI);
+    
+//         if (isNaN(numero)) {
+//             alert(`el numero ingresado no es un numero.`)
+//         }  else if (numero >= 0 && numero < 100000000 ) {
+//             modulo = numero % 23;
+//             switch (modulo) {
+//                 case 0:
+//                     console.log (`T`);
+//                 break;
+//                 case 1:
+//                     console.log (`R`);
+//                 break;
+//                 case 2:
+//                     console.log (`W`);
+//                 break;
+//                 case 3:
+//                     console.log (`A`);
+//                 break;
+//                 case 4:
+//                     console.log (`G`);
+//                 break;
+//                 case 5:
+//                     console.log (`M`);
+//                 break;
+//                 case 6:
+//                     console.log (`Y`);
+//                 break;
+//                 case 7:
+//                     console.log (`F`);
+//                 break;
+//                 case 8:
+//                     console.log (`P`);
+//                 break;
+//                 case 9:
+//                     console.log (`D`);
+//                 break;
+//                 case 10:
+//                     console.log (`X`);
+//                 break;
+//                 case 11:
+//                     console.log (`B`);
+//                 break;
+//                 case 12:
+//                     console.log (`N`);
+//                 break;
+//                 case 13:
+//                     console.log (`J`);
+//                 break;
+//                 case 14:
+//                     console.log (`Z`);
+//                 break;
+//                 case 15:
+//                     console.log (`S`);
+//                 break;
+//                 case 16:
+//                     console.log (`Q`);
+//                 break;
+//                 case 17:
+//                     console.log (`V`);
+//                 break;
+//                 case 18:
+//                     console.log (`H`);
+//                 break;
+//                 case 19:
+//                     console.log (`L`);
+//                 break;
+//                 case 20:
+//                     console.log (`C`);
+//                 break;
+//                 case 21:
+//                     console.log (`K`);
+//                 break;
+//                 default:
+//                     console.log (`E`);
+//                 break;
+//             } 
+//         }
+//         else {
+//             alert(`El numero ingresado no corresponde a un DNI.`)
+//         } 
+//     }
+// }
+
+
+
+
+
+
+
+
+// Ejercicio 6:
+// Realiza un script que escriba una pirámide del 1 al 30 de la siguiente forma :
+
+// 1
+// 22
+// 333
+// 4444
+// 55555
+// 666666
+// …….
+
+
+
+
+// let cadena
+// let caracter
+
+// for (let i = 1; i < 31; i++) {
+//     cadena = "";
+//     caracter = String(i);
+//     for (let j = 0; j < i; j++) {
+//         cadena = cadena + caracter;
+//     }
+//     console.log(cadena);
+// }
+
+
+
+
+
+
+
+// Ejercicio 7:
+// Haz un script que escriba una pirámide inversa de los números del 1 al número que indique el usuario (no mayor de 50)  de la siguiente forma : (suponiendo que indica 30).
+
+
+// let cadena
+// let caracter
+
+// for (let i = 30; i >= 0; i--) {
+//     cadena = "";
+//     caracter = String(i);
+//     for (let j = 0; j < i; j++) {
+//         cadena = cadena + caracter;
+//     }
+//     console.log(cadena);
+// }
+
+
+
+
+
+
+
+// Ejercicio 8:
+// Crea script para generar pirámide siguiente con los números del 1 al número que indique el usuario (no mayor de 50) 
+
+// 1
+// 12
+// 123
+// 1234
+// 12345
+// 123456
+// ……
+
+
+
+
+// let numero = parseInt(prompt (`Ingrese un numero que se encuentre entre el 1 al 50`));
+// let cadena
+// let caracter
+
+// if (isNaN(numero)) {
+//     alert(`el valor ingresado no es un numero.`)
+// } else if (numero >= 0 && numero < 51 ) {
+//     for (let i = 1; i < numero + 1 ; i++) {
+//         cadena = "";
+//         caracter = String(i);
+//         for (let j = 0; j < i; j++) {
+//             cadena = cadena + caracter;
+//         }
+//         console.log(cadena);
+//     }
+    
+// } else {
+//     alert(`El numero ingresado no se encuentra entre 1 y 50`)
+// }
+
+
+
+
+
+
+
+
+
+
+
+// Ejercicio 9:
+// Crea un script que escriba los números del 1 al 500, que indique cuáles son múltiplos de 4 y de 9 y que cada 5 líneas muestre una línea horizontal. Por ejemplo :
+
+// 1
+// 2
+// 3
+// 4 (Múltiplo de 4)
+// 5-
+// ————————————————————-
+// 
+// 6
+// 7
+// 8 (Múltiplo de 4)
+// 9 (Múltiplo de 9)
+// 10
+
+
+
+
+// for (let i = 1; i < 501; i++) {
+    
+//     if (i % 4 == 0 && i % 9 == 0) {
+//         console.log(`${i} (multiplo de 4 y 9)`);
+//     } else if (i % 4 == 0) {
+//         console.log(`${i} (multiplo de 4)`);
+//     } else if (i % 9 == 0)  {
+//         console.log(`${i} (multiplo de 9)`);
+//     } else {
+//         console.log(i);
+//     }
+        
+//     if (i % 5 == 0) {
+//     console.log(`————————————————————`);
+//     }
+    
+// }
+
+
+
+
+
+// Ejercicio 10:
+//Realiza un script que pida número de filas y columnas y escriba una tabla. Dentro de cada una de las celdas deberá escribirse un número consecutivo en orden descendente. Si, por ejemplo, la tabla es de 7×5 los números irán del 35 al 1.
+
+
+
+
+
+
+// Ejercicio 11:
+// Realiza un script que pida por teclado 3 edades y 3 nombres e indique el nombre del mayor. *
+
+// Nota: ver funcion Math() https://www.w3schools.com/js/js_math.asp
+
+// let nombres = [];
+// let edades = [];
+
+
+
+// for (let i = 0; i < 3; i++) {
+//     nombres.push(prompt(`ingrese un nombre:`)) ;
+//     console.log (nombres);
+//     edades.push(prompt(`ingrese la edad de ${nombres[i]}`)) ;
+//     console.log (edades);
+// }
+// if (edades [1] > edades[2]) {
+//     if (edades [1] > edades [3]) {
+//        document.write(`${nombres [1]} es el mayor de los tres `);
+//     } else {
+//        document.write(`${nombres [3]} es el mayor de los tres `);
+//     }
+// } else {
+//     if (edades [2] > edades [3]) {
+//        document.write(`${nombres [2]} es el mayor de los tres `);
+//     } else {
+//        document.write(`${nombres [3]} es el mayor de los tres `);
+//     }
+// }
+
+
+// Ejercicio 12:
+// Realiza un script que genere un número aleatorio entre 1 y 99
+
+
+// let i = true
+// let numeroAleatorio
+// while (i) {
+//     numeroAleatorio = Math.floor(Math.random()*100);
+//     if (numeroAleatorio > 0 && numeroAleatorio < 100) {
+//         i = false ;
+//     }
+// }
+
+// console.log(numeroAleatorio);
+
+
+
+
+
+// Ejercicio 13:
+// Realiza un script que pida un texto y lo muestre en mayúsculas.
+
+
+
+
+
+// Ejercicio 14:
+// Realiza un script que pida una cadena de texto y lo muestre poniendo el signo – entre cada carácter sin usar el método replace. Por ejemplo, si tecleo “hola qué tal”, deberá salir “h-o-l-a- -q-u-e- -t-a-l”.
+
+
+
+
+// Ejercicio 15:
+// Realiza un script que cuente el número de vocales que tiene un texto.
+
+
+
+
+// Ejercicio 16:
+// Realiza un script que pida una cadena de texto y la devuelva al revés. Es decir, si tecleo “hola que tal” deberá mostrar “lat euq aloh”.
+
+
+
+
+
+// Ejercicio 17:
+// Realiza un script que muestre la posición de la primera vocal de un texto introducido por teclado.
+
+// Ejemplo:
+// Input: Hola mundo
+// Output: la vocal ‘o’ está en la posición 1
