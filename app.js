@@ -1,4 +1,4 @@
-// Ejercicio 1:
+// Ejercicio 1:-------------------------------------------------------------------------------------------------------
 // Escribir un programa que solicite la edad y si es mayor de 18 años mostrar un mensaje que ya puede conducir, si la edad ingresada no es un número válido indicarlo en un mensaje.
 
 // Forma 1
@@ -41,7 +41,7 @@
 
 
 
-// Ejercicio 2:
+// Ejercicio 2:-------------------------------------------------------------------------------------------------------
 // Escribir un programa que solicite una nota (número) de 0  a 10. Luego mostrar la calificación en un alert según los siguientes rangos de nota:
 
 // 0-2: Muy deficiente
@@ -93,7 +93,7 @@
 
 
 
-// Ejercicio 3:
+// Ejercicio 3:-------------------------------------------------------------------------------------------------------
 // Realiza un script que pida cadenas de texto  hasta que se pulse “cancelar”. Al salir con “cancelar” deben mostrarse todas las cadenas concatenadas con un guión -.
 
 // let cadena = "";
@@ -111,7 +111,7 @@
 
 
 
-// Ejercicio 4:
+// Ejercicio 4:-------------------------------------------------------------------------------------------------------
 // Realiza un script que pida números hasta que se pulse “cancelar”. Si no es un número deberá indicarse con un «alert» y seguir pidiendo números. Al salir con “cancelar” deberá indicarse la suma total de los números introducidos.
 
 // let suma = 0 ;
@@ -136,7 +136,7 @@
 
 
 
-// Ejercicio 5:
+// Ejercicio 5:-------------------------------------------------------------------------------------------------------
 // Realizar una página con un script que calcule el valor de la letra de un número de DNI (Documento nacional de identidad).
 
 // El algoritmo para calcular la letra del dni es el siguiente :
@@ -249,7 +249,7 @@
 
 
 
-// Ejercicio 6:
+// Ejercicio 6:-------------------------------------------------------------------------------------------------------
 // Realiza un script que escriba una pirámide del 1 al 30 de la siguiente forma :
 
 // 1
@@ -281,7 +281,7 @@
 
 
 
-// Ejercicio 7:
+// Ejercicio 7:-------------------------------------------------------------------------------------------------------
 // Haz un script que escriba una pirámide inversa de los números del 1 al número que indique el usuario (no mayor de 50)  de la siguiente forma : (suponiendo que indica 30).
 
 
@@ -303,7 +303,7 @@
 
 
 
-// Ejercicio 8:
+// Ejercicio 8:-------------------------------------------------------------------------------------------------------
 // Crea script para generar pirámide siguiente con los números del 1 al número que indique el usuario (no mayor de 50) 
 
 // 1
@@ -347,7 +347,7 @@
 
 
 
-// Ejercicio 9:
+// Ejercicio 9:-------------------------------------------------------------------------------------------------------
 // Crea un script que escriba los números del 1 al 500, que indique cuáles son múltiplos de 4 y de 9 y que cada 5 líneas muestre una línea horizontal. Por ejemplo :
 
 // 1
@@ -388,15 +388,29 @@
 
 
 
-// Ejercicio 10:
+// Ejercicio 10:-------------------------------------------------------------------------------------------------------
 //Realiza un script que pida número de filas y columnas y escriba una tabla. Dentro de cada una de las celdas deberá escribirse un número consecutivo en orden descendente. Si, por ejemplo, la tabla es de 7×5 los números irán del 35 al 1.
 
+// let columnas = parseInt(prompt(`ingrese el numero de columnas`));
+// let filas = parseInt(prompt(`ingrese el numero de columnas`));
+// let numero = columnas * filas;
+// let celda;
+
+// for (let i = 0; i < columnas; i++) {
+//     for (let j = 0; j < filas; j++) {
+//         celda = numero;
+//         numero = numero - 1;
+//         console.log(`el valor de la celda de la columna ${i+1} y fila ${j+1} tiene el valor: ${celda} `);
+//     }
+    
+// }
 
 
 
 
 
-// Ejercicio 11:
+
+// Ejercicio 11:-------------------------------------------------------------------------------------------------------
 // Realiza un script que pida por teclado 3 edades y 3 nombres e indique el nombre del mayor. *
 
 // Nota: ver funcion Math() https://www.w3schools.com/js/js_math.asp
@@ -427,7 +441,7 @@
 // }
 
 
-// Ejercicio 12:
+// Ejercicio 12:-------------------------------------------------------------------------------------------------------
 // Realiza un script que genere un número aleatorio entre 1 y 99
 
 
@@ -446,35 +460,122 @@
 
 
 
-// Ejercicio 13:
+// Ejercicio 13:-------------------------------------------------------------------------------------------------------
 // Realiza un script que pida un texto y lo muestre en mayúsculas.
 
+// let cadena = prompt(`ingresar una cadena de texto:`);
+// console.log(cadena.toUpperCase());
 
 
 
 
-// Ejercicio 14:
+
+// Ejercicio 14:-------------------------------------------------------------------------------------------------------
 // Realiza un script que pida una cadena de texto y lo muestre poniendo el signo – entre cada carácter sin usar el método replace. Por ejemplo, si tecleo “hola qué tal”, deberá salir “h-o-l-a- -q-u-e- -t-a-l”.
 
 
 
 
-// Ejercicio 15:
+
+// let cadena = prompt(`ingresar una cadena de texto:`);
+// let salida ="";
+
+
+// for (let i = 0; i < cadena.length; i++) {
+//     if (i==0) {
+//         salida = cadena[i];
+//     } else {
+//         salida = salida + "-" + cadena[i];
+//     }
+// }
+// console.log(salida);
+
+
+
+
+// Ejercicio 15:-------------------------------------------------------------------------------------------------------
 // Realiza un script que cuente el número de vocales que tiene un texto.
 
 
 
+// let cadena = prompt(`ingresar una cadena de texto:`).toLowerCase();
+// let salida = 0;
 
-// Ejercicio 16:
+// for (let i = 0; i < cadena.length; i++) {
+
+//     if (cadena[i]== "a" || cadena[i]== "e" || cadena[i]== "i" || cadena[i]== "o" || cadena[i]== "u" )  {
+//         salida = salida + 1;
+//     }
+// }
+// console.log(`El texto tiene ${salida} vocales.`);
+
+
+
+
+
+// Ejercicio 16:-------------------------------------------------------------------------------------------------------
 // Realiza un script que pida una cadena de texto y la devuelva al revés. Es decir, si tecleo “hola que tal” deberá mostrar “lat euq aloh”.
 
 
+// let cadena = prompt(`ingresar una cadena de texto:`);
+// let salida = "";
+
+// for (let i = cadena.length - 1 ; i >= 0; i-- ) {
+//     salida = salida + cadena[i];
+    
+// }
+// console.log(salida);
 
 
 
-// Ejercicio 17:
+
+
+// Ejercicio 17:-------------------------------------------------------------------------------------------------------
 // Realiza un script que muestre la posición de la primera vocal de un texto introducido por teclado.
 
 // Ejemplo:
 // Input: Hola mundo
 // Output: la vocal ‘o’ está en la posición 1
+
+
+
+// let cadena = prompt(`ingresar una cadena de texto:`).toLowerCase();
+// let pos = 0;
+// let vocal = "";
+// let corte;
+
+// for (let i = 0; i < cadena.length; i++) {
+//     switch (cadena[i]) {
+//         case "a":
+//             pos = i;
+//             vocal = "a";
+//             corte = true;            
+//         break;
+//         case "e":
+//             pos = i;
+//             vocal = "e";    
+//             corte = true;           
+//         break;
+//         case "i":
+//             pos = i;
+//             vocal = "i";    
+//             corte = true;           
+//         break;
+//         case "o":
+//             pos = i;
+//             vocal = "o";    
+//             corte = true;           
+//         break;
+//         case "u":
+//             pos = i;
+//             vocal = "u";    
+//             corte = true;           
+//         break;
+//         default:
+//         break;
+//     }
+//     if (corte == true) {
+//         break;
+//     }
+// }
+// console.log(`la vocal '${vocal}' está en la posición ${pos}.`);
